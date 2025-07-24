@@ -93,23 +93,28 @@ Latest Update: July. 24, 2025
 
 ## 3.1 0D任务
 <img src="./image/0D-task.png" width="300" height="350"/>
+*Figure:  Granular Pole Shaping(image from DeformPAM).*
 任务介绍：在这个任务中，机器人需要将一堆杂乱的颗粒状物体（如坚果）扫成字符t的形状。
 
 ## 3.2 1D任务
 <img src="./image/1D-task.png"  width="300" height="350"/>
+*Figure:  Rope(image from DeformPAM).*
 任务介绍：绳索成型，在本任务中，机器人使用拾取-放置原语动作a = (p, q)将随机形状的绳索形成圆形
 
 ## 3.3 2D任务
 <img src="./image/2D-task.png"  width="300" height="350"/>
+*Figure:  T-shirt Unfolding(image from DeformPAM).*
 任务介绍：展开t恤：这项任务的目标是将一件高度皱褶的短袖t恤弄平,或折叠t恤：将一件展平的短袖折叠
 
 ## 3.4 3D任务
 <img src="./image/3D-task.png"  width="500" height="350"/>
+*Figure:  (image from Bag is all your need).*
 任务介绍：装袋任务要求将多个刚性（如苹果）和可变形物体（如t恤）装入可变形袋中。
 
 
 ## 3.4 动态任务
 <img src="./image/dynamic-task.png" width="500" height="350"/>
+*Figure:  Goal-conditioned Dynamic Rope Manipulation(image from "Iterative Residual Policy for Goal-Conditioned Dynamic Manipulation of Deformable Objects").*
 任务介绍：上图：绳子操作任务。 目标配置由目标尖端位置（绿色叉）定义。下图：布料操作任务。 目标配置由目标关键点位置（绿点）定义。
 
 
