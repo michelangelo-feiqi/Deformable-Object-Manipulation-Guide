@@ -65,7 +65,7 @@ Latest Update: July. 24, 2025
 > 柔性物体：在外力作用下会发生“显著且可恢复或不可恢复的形变”的物体,其形变自由度远超刚性体，无法用有限个位姿参数描述。<br/>
 柔性物体操作：是指机器人利用末端执行器（夹爪、灵巧手或工具）对在外力作用下会发生显著形变的物体进行感知、建模、规划与控制，以实现特定任务目标的全过程。
 ## How - 如何学习这份指南
-希望可以帮助新人快速建立领域认知, 所以设计理念是：**简要**介绍目前具身智能涉及到的主要技术, 让大家知道不同的技术能够解决什么问题, 未来想要深入发展的时候能够有头绪。
+希望帮助快速建立领域认知, 所以设计理念是：**简要**介绍目前柔性物体操作的主要技术, 让大家知道不同的技术的设计初衷，能够解决什么问题。
 ## About us - 关于我们
 我们是一个初学者团队，在我们自己的学习过程中，将一些资料、论文、Code整理总结，搭建理论框架的同时, 为后来者提供一些帮助。
 
@@ -244,8 +244,12 @@ Latest Update: July. 24, 2025
 #### 4.2.1.2 最新工作
 
 ### 4.2.2 模仿学习
-#### 4.2.2.1 最新工作
-- **DeformPAM** ([website](https://deform-pam.robotflow.ai/)[paper](https://arxiv.org/abs/2410.11584)[code](https://github.com/xiaoxiaoxh/DeformPAM)), 上交大, 2025 ICRA, 2025.1): 用“少量演示 + 人类偏好 + 扩散原语”解决了长程柔性体操作中的分布漂移与数据饥渴难题，在真实机器人上完成颗粒塑形、绳圈成形和 T 恤展开三项高难度任务。范式：“把长任务拆短 + 用人类偏好给动作打分 + 扩散模型做生成”。（人类偏好引入的有效性有待商榷）
+#### 4.2.2.1 经典工作
+- **ACT（Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware）** ([website](https://tonyzhaozh.github.io/aloha/) [paper](https://arxiv.org/abs/2304.13705) [code](https://github.com/tonyzhaozh/act)), 斯坦福, 2023 RSS，2023.4):  提出ACT（Action Chunking with Transformers）降低累积误差，一次性预测未来 k 步动作块，并以时间集成平滑输出。ACT = Action Chunking + Transformer + CVAE + Temporal Ensemble。
+
+#### 4.2.2.2 最新工作
+- **DeformPAM** ([website](https://deform-pam.robotflow.ai/) [paper](https://arxiv.org/abs/2410.11584) [code](https://github.com/xiaoxiaoxh/DeformPAM)), 上交大, 2025 ICRA, 2025.1): 用“少量演示 + 人类偏好 + 扩散原语”解决了长程柔性体操作中的分布漂移与数据饥渴难题，在真实机器人上完成颗粒塑形、绳圈成形和 T 恤展开三项高难度任务。范式：“把长任务拆短 + 用人类偏好给动作打分 + 扩散模型做生成”。（人类偏好引入的有效性有待商榷）
+
 
 
 ## 4.3 End to End Method - 端到端方法
