@@ -287,6 +287,15 @@ LCB、Robodual、Pi0/CogACT
 | [IsaacSim](https://developer.nvidia.com/isaac/sim) | [BEHAVIOR-1K(可跨平台)](https://behavior.stanford.edu/behavior-1k)+[omniGibson(工具链)](https://behavior.stanford.edu/omnigibson/)<br>[ARNOLD](https://arnold-benchmark.github.io/) <br> [GarmentLab](https://garmentlab.github.io/) and [DexGarmentLab](https://wayrise.github.io/DexGarmentLab/) |
 | [MuJoCo](https://mujoco.org/) | [robosuite](https://robosuite.ai/docs/overview.html)+[robomimic(工具链)](https://robomimic.github.io/)<br>[LIBERO](https://libero-project.github.io/main.html)<br>[MetaWorld](https://meta-world.github.io/)<br>[Gymnasium-Robotics(Fetch; Shadow Dexterous Hand; Maze; Adroit Hand; Franka Kitchen; MaMuJoCo)](https://robotics.farama.org/)<br>[RoboCasa](https://github.com/robocasa/robocasa?tab=readme-ov-file)<br>[RoboHive](https://github.com/vikashplus/robohive) |
 
+MuJoCo与控制代码交互示例
+
+``` python
+xml_path = os.path.join(XML_DIR, f'bimanual_viperx_transfer_cube.xml')
+physics = mujoco.Physics.from_xml_path(xml_path)
+task = TransferCubeTask(random=False)
+env = control.Environment(physics, task, time_limit=20, control_timestep=DT,
+                            n_sub_steps=None, flat_observation=False)
+``` 
 
 ## 5.2 Datasets - 数据集
 
