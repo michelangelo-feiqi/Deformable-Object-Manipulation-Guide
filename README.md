@@ -304,8 +304,8 @@ env = control.Environment(physics, task, time_limit=20, control_timestep=DT,
 * **DROID**,[website](https://droid-dataset.github.io/) [dataset](https://droid-dataset.github.io/droid/docs/software-setup):在 564 个场景和 86 项任务中收集到的 76k 条示范轨迹或 350 小时交互数据组成的多样化机器人操纵数据集。full dataset (1.7TB),可以下载example version of the dataset with 100 episodes (2GB)
 
 ## 5.3 Benchmark - 基准
-* **SoftGym**, [website](https://sites.google.com/view/softgym) [paper](https://arxiv.org/abs/2011.07215) [code](https://github.com/Xingyu-Lin/softgym):  SoftGym 是一套用于可变形物体操作的基准环境，包括涉及流体、布料和绳索的任务。。
-
+* **SoftGym**, ([website](https://sites.google.com/view/softgym) [paper](https://arxiv.org/abs/2011.07215) [code](https://github.com/Xingyu-Lin/softgym) 2020):  SoftGym 是一套用于可变形物体操作的基准环境，包括涉及流体、布料和绳索的任务。
+* **RoboTwin 2.0**, ([website](https://robotwin-platform.github.io/) [paper](https://arxiv.org/abs/2506.18088) [code](https://github.com/robotwin-Platform/RoboTwin) [doc](https://robotwin-platform.github.io/doc/index.html) [dataset](https://huggingface.co/datasets/TianxingChen/RoboTwin2.0/tree/main/dataset/aloha-agilex) 上交大ScaleLab，2025):  开源仿真平台，专注于双臂机器人操作任务，包含RoboTwin-OD 数据集、预采集的 10 万多条专家轨迹数据、50 个任务的基准测试。（在任务中没有找到针对柔性物体操作的任务）
 
 <section id="hardware"></section>
 
