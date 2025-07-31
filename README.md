@@ -301,7 +301,7 @@ env = control.Environment(physics, task, time_limit=20, control_timestep=DT,
 
 * **DexGarmentLab**, [website](https://wayrise.github.io/DexGarmentLab/) [dataset](https://huggingface.co/datasets/wayrise/DexGarmentLab/tree/main):  来自ClothesNet的8个类别的2500多件服装的大规模数据集，15个任务场景的高质量3D资产。
 * **ClothesNet**, [website](https://sites.google.com/view/clothesnet/) [dataset](https://docs.google.com/forms/d/e/1FAIpQLSdE-cUxWSzvC-D99RqkIHI9yLHjvT_5QygszjfqxnB6vIt8vw/viewform):  由约 4400 个模型组成，涵盖 11 个类别，并标注了衣服特征、边界线和关键点。
-
+* **DROID**,[website](https://droid-dataset.github.io/) [dataset](https://droid-dataset.github.io/droid/docs/software-setup):在 564 个场景和 86 项任务中收集到的 76k 条示范轨迹或 350 小时交互数据组成的多样化机器人操纵数据集。full dataset (1.7TB),可以下载example version of the dataset with 100 episodes (2GB)
 
 ## 5.3 Benchmark - 基准
 
