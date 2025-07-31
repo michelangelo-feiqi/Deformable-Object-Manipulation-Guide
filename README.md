@@ -298,11 +298,20 @@ env = control.Environment(physics, task, time_limit=20, control_timestep=DT,
 ``` 
 
 ## 5.2 Datasets - 数据集
+* **Open X-Embodiment**, [website](https://robotics-transformer-x.github.io/) [code](https://github.com/google-deepmind/open_x_embodiment) [paper](https://arxiv.org/abs/2310.08864):  汇集了 21 家机构合作收集的 22 种不同机器人的数据集，展示了 527 种技能（160266 项任务）
 
+* **从X-Embodiment中筛选出的DOM dataset**
+* **Berkeley_autolab_ur5**，数据包括 4 项机器人操纵任务：打扫衣物、在容器之间简单地拿放毛绒玩具、堆叠杯子，以及要求精确抓取和 6DOF 旋转的高难度拿放瓶子任务。
+* **USC Cloth Sim**，[website](https://uscresl.github.io/dmfd/) [code](https://github.com/uscresl/dmfd)：机器人沿对角线操纵可变形物体（桌面上的布）。
+* **UTokyo_pr2_tabletop_manipulation**，PR2 机器人可对桌面物体进行操作，包括取放面包和葡萄，折叠布料。
+* **UTokyo_xarm_bimanual**，拿起桌上的毛巾。并展开了褶皱的毛巾。
 * **DexGarmentLab**, [website](https://wayrise.github.io/DexGarmentLab/) [dataset](https://huggingface.co/datasets/wayrise/DexGarmentLab/tree/main):  来自ClothesNet的8个类别的2500多件服装的大规模数据集，15个任务场景的高质量3D资产。
+
+
+* **暂时不可直接使用**
 * **ClothesNet**, [website](https://sites.google.com/view/clothesnet/) [dataset](https://docs.google.com/forms/d/e/1FAIpQLSdE-cUxWSzvC-D99RqkIHI9yLHjvT_5QygszjfqxnB6vIt8vw/viewform):  由约 4400 个模型组成，涵盖 11 个类别，并标注了衣服特征、边界线和关键点。
-* **DROID**,[website](https://droid-dataset.github.io/) [dataset](https://droid-dataset.github.io/droid/docs/software-setup):在 564 个场景和 86 项任务中收集到的 76k 条示范轨迹或 350 小时交互数据组成的多样化机器人操纵数据集。full dataset (1.7TB),可以下载example version of the dataset with 100 episodes (2GB).
-* **DeformPAM**,[dataset](https://huggingface.co/datasets/WendiChen/DeformPAM_Dataset):提供了两个版本的数据集：一个是论文中用于训练模型的完整数据集，另一个是便于检查的迷你数据集。两个版本都包括颗粒桩成型、绳索成型和 T恤展开的监督和微调子集。
+* **DROID**,[website](https://droid-dataset.github.io/) [dataset](https://droid-dataset.github.io/droid/docs/software-setup):在 564 个场景和 86 项任务中收集到的 76k 条示范轨迹或 350 小时交互数据组成的多样化机器人操纵数据集。full dataset (1.7TB),可以下载example version of the dataset with 100 episodes (2GB)(家庭场景的真机演示数据)
+* **DeformPAM**,[dataset](https://huggingface.co/datasets/WendiChen/DeformPAM_Dataset):提供了两个版本的数据集：一个是论文中用于训练模型的完整数据集，另一个是便于检查的迷你数据集。两个版本都包括颗粒桩成型、绳索成型和 T恤展开的监督和微调子集。(真机演示数据)
 
 ## 5.3 Benchmark - 基准
 * **SoftGym**, ([website](https://sites.google.com/view/softgym) [paper](https://arxiv.org/abs/2011.07215) [code](https://github.com/Xingyu-Lin/softgym) 2020):  SoftGym 是一套用于可变形物体操作的基准环境，包括涉及流体、布料和绳索的任务。
