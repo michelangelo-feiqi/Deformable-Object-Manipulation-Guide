@@ -266,6 +266,7 @@ Latest Update: July. 24, 2025
 
 ### 4.3.1 隐式端到端
 RT-1、RT-2、Roboflamnigo、OpenVLA、MDT、RDT
+- **OpenVLA** ([website](https://openvla.github.io/) [paper](https://arxiv.org/abs/2406.09246) [code](https://github.com/openvla/openvla)), Stanford , 2024 Robotics , 2024.9): 首个以开源形式把互联网级 VLM 与百万级机器人轨迹融合，并用 7B 参数实现跨机器人通用操作的 VLA 框架，将 DINOv2（空间几何）+ SigLIP（语义对齐） 同时注入 Llama-2，把 7-D 机器人动作离散化为 256 个 token，直接纳入语言模型词表，实现 一步式语言→动作 解码，，无需 IK、轨迹规划等显式模块。
 ### 4.3.2 显式端到端
 UniPi、Robodreamer、LAPA、GR系列、GR1
 ### 4.3.3 分层端到端
