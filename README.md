@@ -271,6 +271,7 @@ RT-1、RT-2、Roboflamnigo、OpenVLA、MDT、RDT
 UniPi、Robodreamer、LAPA、GR系列、GR1
 ### 4.3.3 分层端到端
 LCB、Robodual、Pi0/CogACT
+- **RoboDual** ([website](https://opendrivelab.com/RoboDual/) [paper](https://arxiv.org/abs/2410.08001) [code](https://github.com/OpenDriveLab/RoboDual)), 上交大 , 2024.10): 用OpenVLA的输出作为提示,再用DiT将其他输入合并,重新还原更高精度的结果,一个低频的Generalist Policy,一个高频的Specialist Policy。其中Generalist Policy基本上就是OpenVLA，加了些小改进，算力原因，只能低频运行；Specialist Policy是个DiT为主的模型，输入除了DiT的占位的噪声输入外，主要是1，把一些SensorData过一些网络得到一些环境感知的结果；2，前边Generalist Policy的Action输出，以及语义Latent；3，其他一些机器人状态信息。
 ### 4.3.4 其他范式
 3DDA、Octo、ATM
 
