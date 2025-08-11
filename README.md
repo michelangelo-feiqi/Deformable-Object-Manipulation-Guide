@@ -247,6 +247,8 @@ Latest Update: July. 24, 2025
 #### 4.2.2.1 经典工作
 - **ACT（Learning Fine-Grained Bimanual Manipulation with Low-Cost Hardware）** ([website](https://tonyzhaozh.github.io/aloha/) [paper](https://arxiv.org/abs/2304.13705) [code](https://github.com/tonyzhaozh/act)), 斯坦福, 2023 RSS，2023.4):  提出ACT（Action Chunking with Transformers）降低累积误差，一次性预测未来 k 步动作块，并以时间集成平滑输出。ACT = Action Chunking + Transformer + CVAE + Temporal Ensemble。
 
+- **SpeedFolding （SpeedFolding: Learning Efficient Bimanual Folding of Garments）** ([website](https://pantor.github.io/speedfolding/) [paper](https://arxiv.org/abs/2208.10552) [code](https://github.com/pantor/speedfolding)), Berkeley , 2022 IROS):  使用展平（smoothing）和折叠（folding）解决高维柔性体形变空间难以一步规划的问题；构建BiMaMa-Net，输入单张 RGB-D，输出「原语类型 m + 左右手 (x,y,θ) 配对」，其中使用分类器预测5种原语。
+
 #### 4.2.2.2 最新工作
 - **DeformPAM** ([website](https://deform-pam.robotflow.ai/) [paper](https://arxiv.org/abs/2410.11584) [code](https://github.com/xiaoxiaoxh/DeformPAM)), 上交大, 2025 ICRA, 2025.1): 用“少量演示 + 人类偏好 + 扩散原语”解决了长程柔性体操作中的分布漂移与数据饥渴难题，在真实机器人上完成颗粒塑形、绳圈成形和 T 恤展开三项高难度任务。范式：“把长任务拆短 + 用人类偏好给动作打分 + 扩散模型做生成”。（人类偏好引入的有效性有待商榷）
 
