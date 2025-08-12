@@ -249,6 +249,8 @@ Latest Update: July. 24, 2025
 
 - **SpeedFolding （SpeedFolding: Learning Efficient Bimanual Folding of Garments）** ([website](https://pantor.github.io/speedfolding/) [paper](https://arxiv.org/abs/2208.10552) [code](https://github.com/pantor/speedfolding)), Berkeley , 2022 IROS):  使用展平（smoothing）和折叠（folding）解决高维柔性体形变空间难以一步规划的问题；构建BiMaMa-Net，输入单张 RGB-D，输出「原语类型 m + 左右手 (x,y,θ) 配对」，其中使用分类器预测5种原语。
 
+- **UniGarmentManip (UniGarmentManip: A Unified Framework for Category-Level Garment Manipulation via Dense Visual Correspondence）** ([website](https://warshallrho.github.io/unigarmentmanip/) [paper](https://arxiv.org/abs/2405.06903) [code]https://github.com/luhr2003/UniGarmentManip)), 北京大学 , 2024 CVPR):  提出"类别级稠密视觉对应"（category-level dense visual correspondence）作为统一表征，用自监督学到的拓扑对应 + 少数几条演示即可把某件衣服上的操作点和动作迁移到同类任意新衣，实现双臂或单臂的展开、折叠、悬挂三大任务，且无需再为每个任务重新训练策略。。
+
 #### 4.2.2.2 最新工作
 - **DeformPAM** ([website](https://deform-pam.robotflow.ai/) [paper](https://arxiv.org/abs/2410.11584) [code](https://github.com/xiaoxiaoxh/DeformPAM)), 上交大, 2025 ICRA, 2025.1): 用“少量演示 + 人类偏好 + 扩散原语”解决了长程柔性体操作中的分布漂移与数据饥渴难题，在真实机器人上完成颗粒塑形、绳圈成形和 T 恤展开三项高难度任务。范式：“把长任务拆短 + 用人类偏好给动作打分 + 扩散模型做生成”。（人类偏好引入的有效性有待商榷）
 
