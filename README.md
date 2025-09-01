@@ -253,7 +253,9 @@ Latest Update: July. 24, 2025
 
 - **UniFolding: Towards Sample-efficient, Scalable, and Generalizable Robotic Garment Folding** 
  ([website](https://unifolding.robotflow.ai/) [paper](https://arxiv.org/abs/2311.01267) [code](https://github.com/xiaoxiaoxh/UniFolding)), 上交大, 2023 CORL): UniFolding 用少量人类 VR 示范 + 真机偏好微调，训练统一网络 UFONet 把“展开+折叠”合并为同一策略，实现双臂机器人对未见衬衫的高效、稳健折叠。
- 
+
+- **Cloth Funnels: Canonicalized-Alignment for Multi-Purpose Garment Manipulation** 
+ ([website](https://clothfunnels.cs.columbia.edu/) [paper](https://arxiv.org/abs/2210.09347) [code]https://github.com/real-stanford/cloth-funnels/tree/main?tab=readme-ov-file)), 哥伦比亚大学, ICRA 2023): 提出一种通用的衣物操作策略，将衣物操作任务分解为Canonicalized-Alignment：将任意初始状态的衣物，通过系列动作，转换成预定义的标准形状，并摆放在工作空间中的指定位置和方向；下游任务执行：使用简单的启发式策略，如关键点检测+规则，完成熨烫或折叠等任务。。
 
 #### 4.2.2.2 最新工作
 - **DeformPAM** ([website](https://deform-pam.robotflow.ai/) [paper](https://arxiv.org/abs/2410.11584) [code](https://github.com/xiaoxiaoxh/DeformPAM)), 上交大, 2025 ICRA, 2025.1): 用“少量演示 + 人类偏好 + 扩散原语”解决了长程柔性体操作中的分布漂移与数据饥渴难题，在真实机器人上完成颗粒塑形、绳圈成形和 T 恤展开三项高难度任务。范式：“把长任务拆短 + 用人类偏好给动作打分 + 扩散模型做生成”。（人类偏好引入的有效性有待商榷）
