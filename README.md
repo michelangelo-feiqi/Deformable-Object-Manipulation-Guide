@@ -310,6 +310,8 @@ env = control.Environment(physics, task, time_limit=20, control_timestep=DT,
 ``` 
 
 ## 5.2 Datasets - 数据集
+* **Cloth3d: Clothed 3d humans**, [website](https://hbertiche.github.io/CLOTH3D/) [dataset](https://chalearnlap.cvc.uab.cat/dataset/38/description/) [paper](https://arxiv.org/abs/1912.02792):  CLOTH3D 是一个大规模、自动生成的 3D 穿衣人体网格数据集，涵盖多样服装款式与动态褶皱，包含服装类型、拓扑结构、形状、尺寸、松紧度和面料方面的大量变化
+
 * **Open X-Embodiment**, [website](https://robotics-transformer-x.github.io/) [code](https://github.com/google-deepmind/open_x_embodiment) [paper](https://arxiv.org/abs/2310.08864):  汇集了 21 家机构合作收集的 22 种不同机器人的数据集，展示了 527 种技能（160266 项任务）
 
 * **从X-Embodiment中筛选出的DOM dataset**
