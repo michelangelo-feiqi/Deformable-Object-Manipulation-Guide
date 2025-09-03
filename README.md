@@ -288,6 +288,9 @@ LCB、Robodual、Pi0/CogACT
 ### 4.3.5 最新工作
 - **GR-3** ([website](https://seed.bytedance.com/zh/public_papers/gr-3-technical-report)[paper](https://arxiv.org/pdf/2507.15493)), 字节跳动, 2025.7.22): 利用Robot Trajectory Data + vision-language data进行训练，再加入VR设备采集的Human Trajectory Data进行微调，指标超过pi0。（主要创新都在训练流程和数据采集）
 
+## 4.4 tools - 工具方法
+- **Spatial Action Maps** ([website]https://spatial-action-maps.cs.princeton.edu/)[paper](https://arxiv.org/abs/2004.09141)), Princeton University, 2020 RSS): 提出一种动作表示方法，将动作表示为一个与输入图像空间对齐的稠密像素图（Dense Pixel Map），每个像素代表一个可到达的导航终点，使机器人能一次性规划到任意位置
+
 <section id="software"></section>
 
 # 5. Software - 软件
